@@ -1,5 +1,6 @@
 body {
     background-color: blue;
+    font-size: 2rem;
 }
 
 #small,
@@ -7,9 +8,10 @@ body {
     display: none;
 }
 
-@media all and (max-device-width: 410px) {
+@media all and (max-width: 410px) {
     body {
         background-color: red;
+        font-size: 1rem;
     }
 
     #small {
@@ -22,9 +24,10 @@ body {
     }
 }
 
-@media all and (max-device-width: 768px) {
+@media all and (min-width: 410px) and (max-width: 768px) {
     body {
         background-color: green;
+        font-size: 1.5rem;
     }
 
     #medium {
