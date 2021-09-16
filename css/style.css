@@ -1,19 +1,28 @@
 body {
     background-color: blue;
     font-size: 2rem;
+    display: flex;
 }
 
+div {
+    border: 2px solid black;
+}
+
+/*
 #small,
 #medium {
     display: none;
 }
+*/
 
 @media all and (max-width: 410px) {
     body {
         background-color: red;
         font-size: 1rem;
+        flex-direction: column;
     }
 
+    /*
     #small {
         display: block;
     }
@@ -22,14 +31,33 @@ body {
     #large {
         display: none;
     }
+    */
 }
 
 @media all and (min-width: 410px) and (max-width: 768px) {
     body {
         background-color: green;
         font-size: 1.5rem;
+        flex-wrap: wrap;
     }
 
+    div {
+        box-sizing: border-box;
+    }
+
+    #small {
+        width: 66.66%;
+    }
+
+    #medium {
+        width: 33.333%;
+    }
+
+    #large {
+        width: 100%;
+    }
+
+    /*
     #medium {
         display: block;
     }
@@ -38,4 +66,5 @@ body {
     #large {
         display: none;
     }
+    */
 }
