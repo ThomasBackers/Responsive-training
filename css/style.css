@@ -1,0 +1,38 @@
+body {
+    background-color: blue;
+}
+
+#small,
+#medium {
+    display: none;
+}
+
+@media all and (max-device-width: 410px) {
+    body {
+        background-color: red;
+    }
+
+    #small {
+        display: block;
+    }
+
+    #medium,
+    #large {
+        display: none;
+    }
+}
+
+@media all and (max-device-width: 768px) {
+    body {
+        background-color: green;
+    }
+
+    #medium {
+        display: block;
+    }
+
+    #small,
+    #large {
+        display: none;
+    }
+}
